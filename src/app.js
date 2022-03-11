@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
+import EmailValidator from 'email-validator';
 
 const App = () => {
+  const [email, setEmail] = useState('');
+  const [errorEmail, setErrorEmail] = useState(false);
+
   const submit = (event) => {
     event.preventDefault();
+
+    !EmailValidator.validate(email)
+      ? setErrorEmail(true)
+      : setErrorEmail(false);
+    password === '' ? setErrorPassword(true) : setErrorPassword(false);
   };
   return (
     <>
@@ -26,13 +35,22 @@ const App = () => {
             <input
               type="text"
               id="email"
-              className="main__hero-block__form__input"
+              className={`main__hero-block__form__input ${
+                errorEmail ? 'error' : ''
+              }`}
               placeholder="Your email address..."
+              autoComplete="off"
+              onChange={(e) => setEmail(e.target.value)}
             />
             <button type="submit" className="main__hero-block__form__button">
               Notify Me
             </button>
           </form>
+          {errorEmail && (
+            <div className="main__hero-block__message-error">
+              Please provide a valid email address
+            </div>
+          )}
         </div>
         <div className="main__hero-image-container">
           <img

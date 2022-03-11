@@ -12,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 
     &__announcement {
       margin-top: 4.4rem;
@@ -58,6 +59,10 @@
         &::placeholder {
           color: var(--color-input-border);
         }
+
+        &.error {
+          border-color: var(--color-error);
+        }
       }
 
       &__button {
@@ -76,6 +81,16 @@
           cursor: pointer;
         }
       }
+    }
+
+    &__message-error {
+      position: absolute;
+      bottom: -2.3rem;
+      left: 3rem;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 1.2rem;
+      color: var(--color-error);
     }
   }
 
