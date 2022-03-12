@@ -11,7 +11,6 @@ const App = () => {
     !EmailValidator.validate(email)
       ? setErrorEmail(true)
       : setErrorEmail(false);
-    password === '' ? setErrorPassword(true) : setErrorPassword(false);
   };
   return (
     <>
