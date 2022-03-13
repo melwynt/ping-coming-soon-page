@@ -36,7 +36,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io/solutions/ping-coming-soon-page-with-react-sassscss-and-email-validator-QUtercXaF](https://www.frontendmentor.io/solutions/ping-coming-soon-page-with-react-sassscss-and-email-validator-QUtercXaF)
 - Live Site URL: [ping-coming-soon-page-rust-psi.vercel.app](https://ping-coming-soon-page-rust-psi.vercel.app/)
 
 ## My process
