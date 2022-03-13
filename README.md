@@ -1,100 +1,84 @@
-# A simple React and SASS Boilerplate with Parcel bundler.
+# Frontend Mentor - Ping coming soon page solution
+
+This is a solution to the [Ping coming soon page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
-- [A simple React and SASS Boilerplate with Parcel bundler.](#a-simple-react-and-sass-boilerplate-with-parcel-bundler)
+- [Frontend Mentor - Ping coming soon page solution](#frontend-mentor---ping-coming-soon-page-solution)
   - [Table of contents](#table-of-contents)
-  - [Description](#description)
-  - [Why should you use this boilerplate?](#why-should-you-use-this-boilerplate)
-  - [Things I've added to get you up and running](#things-ive-added-to-get-you-up-and-running)
-  - [HMR (Hot Module Replacement)](#hmr-hot-module-replacement)
-  - [Troubleshooting](#troubleshooting)
-  - [Fork](#fork)
-  - [Contact](#contact)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-## Description
+## Overview
 
-- [parceljs](https://parceljs.org/)
-- react
-- react-dom
-- sass
+### The challenge
 
-Node version in use (`node -v`):<br>
-`v16.13.0`
+Users should be able to:
 
-Run `npm ci` locally to install all required modules.
+- View the optimal layout for the site depending on their device's screen size
+- See hover states for all interactive elements on the page
+- Submit their email address using an `input` field
+- Receive an error message when the `form` is submitted if:
+  - The `input` field is empty. The message for this error should say _"Whoops! It looks like you forgot to add your email"_
+  - The email address is not formatted correctly (i.e. a correct email address should have this structure: `name@host.tld`). The message for this error should say _"Please provide a valid email address"_
 
-Run `npm start` to start the live server locally.
+### Screenshot
 
-Please give this repo a ⭐ if you found it useful! Thanks
+![](./screenshot.png)
 
-## Why should you use this boilerplate?
+### Links
 
-Parcel is fast!<br>
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [ping-coming-soon-page-rust-psi.vercel.app](https://ping-coming-soon-page-rust-psi.vercel.app/)
 
-And this boilerplate makes it super easy to get you up and running.
+## My process
 
-## Things I've added to get you up and running
+### Built with
 
-In the `index.html` file, I've added the bare minimum.<br>
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Desktop-first workflow
+- [React](https://reactjs.org/) - JS library
+- SASS/SCSS - For styles
 
-In `index.js` and `app.js`, you can replace the code with your React app.<br>
+### What I learned
 
-The code below will only apply in development.<br>
+For this project I reused the `email validation`logic built in another project ([github.com/melwynt/intro-component-with-signup-form-master](https://github.com/melwynt/intro-component-with-signup-form-master))
 
-> Hot Module Replacement (HMR) improves the development experience by automatically updating modules in the browser at runtime without needing a whole page refresh. This means that application state can be retained as you change small things.
+### Continued development
 
-```javascript
-if (module.hot) {
-  module.hot.accept();
-}
-```
+- Fix the design of the error message to match provided mobile design
+- Change Facebook icon with LinkedIn icon
+- Add social links
+- Add success/thank you message once email is sent
 
-## HMR (Hot Module Replacement)
+### Useful resources
 
-You might have noticed in `package.json` this line:
+For this project I used this boilerplate which is saving me tons of time:<br>
 
-```
-"start": "rm -rf public/* && parcel src/index.html --dist-dir public --port 1234 --hmr-port 4326 --host localhost --open"
-```
+- [github.com/melwynt/react-html-sass-boilerplate](https://github.com/melwynt/react-html-sass-boilerplate)
 
-Normally it would have been enough to just enter:
+It's a simple React and SASS Boilerplate with Parcel bundler.
 
-```
-"start": "parcel src/index.html"
-```
+- [Pixel Perfect Pro](https://addons.mozilla.org/en-US/firefox/addon/pixel-perfect-pro/) - This helped me to display a screenshot on top of the webpage to easily check if dimensions were accurate. This is super useful is you need to create pixel perfect work.
+- [PX: Viewport Dimensions](https://addons.mozilla.org/en-US/firefox/addon/px-viewport-dimensions/) - This add-on will show you the dimensions of your viewport while resizing your browser.
 
-HMR might fail on some machines hence the need to specify `--port`, `--hmr-port` and `--host`.
+Other tools:
 
-Source: [https://github.com/parcel-bundler/parcel/issues/6334#issuecomment-868853192](https://github.com/parcel-bundler/parcel/issues/6334#issuecomment-868853192)
+- [Gimp](https://www.gimp.org/) - This helped me resize screenshots provided in the project
+- [Figma](https://www.figma.com) - This helped me create a rapid mockup to get dimensions of components.
 
-```
-rm -rf public/*
-```
+## Author
 
-Each time we are running `npm start`, we delete all the files inside the `public` folder to avoid stale files.
-
-## Troubleshooting
-
-If you get a `404` error, try to run delete the cache first by entering:
-
-```
-rm -rf .parcel-cache
-```
-
-## Fork
-
-You should fork this repo if you would like to use it.
-
-If you decide to clone this repo, don't forget to change your Git remote URL:<br>
-Here's a quick [How-To](https://devconnected.com/how-to-change-git-remote-origin/) guide.
-
-```
-git remote set-url origin <your-remote_url>
-git remote -v
-```
-
-## Contact
-
-🐦 Twitter: [@melwyncode](https://twitter.com/melwyncode)<br>
-🧑‍💻 LinkedIn: [melwynturbant](https://www.linkedin.com/in/melwynturbant)
+- 🚀 Frontend Mentor - [@melwynt](https://www.frontendmentor.io/profile/melwynt)<br>
+- 🐦 Twitter: [@melwyncode](https://twitter.com/melwyncode)<br>
+- 🧑‍💻 LinkedIn: [melwynturbant](https://www.linkedin.com/in/melwynturbant)
