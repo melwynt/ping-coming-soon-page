@@ -190,6 +190,11 @@
       border-radius: 1.6rem;
       margin-left: 1.3rem;
 
+      img {
+        width: 1.4rem;
+        height: auto;
+      }
+
       &:hover {
         cursor: pointer;
         background-color: var(--color-button);

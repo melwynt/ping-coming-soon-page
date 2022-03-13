@@ -25,12 +25,7 @@ const App = () => {
           <div className="main__hero-block__cta">
             Subscribe and get notified
           </div>
-          <form
-            action=""
-            className="main__hero-block__form"
-            onSubmit={submit}
-            noValidate
-          >
+          <form className="main__hero-block__form" onSubmit={submit} noValidate>
             <input
               type="text"
               id="email"
@@ -62,28 +57,13 @@ const App = () => {
       <footer className="footer">
         <div className="footer__social">
           <div className="footer__social__icon first">
-            <img
-              src={require('../images/facebook.svg')}
-              alt="facebook"
-              width="14px"
-              height="14px"
-            />
+            <img src={require('../images/facebook.svg')} alt="facebook" />
           </div>
           <div className="footer__social__icon">
-            <img
-              src={require('../images/twitter.svg')}
-              alt="twitter"
-              width="14px"
-              height="14px"
-            />
+            <img src={require('../images/twitter.svg')} alt="twitter" />
           </div>
           <div className="footer__social__icon">
-            <img
-              src={require('../images/instagram.svg')}
-              alt="instagram"
-              width="14px"
-              height="14px"
-            />
+            <img src={require('../images/instagram.svg')} alt="instagram" />
           </div>
         </div>
         <div className="footer__copyright">
